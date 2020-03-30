@@ -1,8 +1,3 @@
-variable "efs_id" {
-  type        = "string"
-  description = "EFS ID"
-}
-
 variable "prefix" {
   type        = "string"
   default     = ""
