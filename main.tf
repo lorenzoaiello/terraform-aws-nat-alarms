@@ -1,5 +1,5 @@
 resource "aws_cloudwatch_metric_alarm" "dropped_packets" {
-  alarm_name          = "${var.prefix}efs-${var.efs_id}-droppedPackets"
+  alarm_name          = "${var.prefix}nat-${var.efs_id}-droppedPackets"
   comparison_operator = "GreaterThanThreshold"
   evaluation_periods  = var.evaluation_period
   metric_name         = "PacketsDropCount"
@@ -13,7 +13,7 @@ resource "aws_cloudwatch_metric_alarm" "dropped_packets" {
 }
 
 resource "aws_cloudwatch_metric_alarm" "error_allocating_ports" {
-  alarm_name          = "${var.prefix}efs-${var.efs_id}-errorAllocatingPorts"
+  alarm_name          = "${var.prefix}nat-${var.efs_id}-errorAllocatingPorts"
   comparison_operator = "GreaterThanThreshold"
   evaluation_periods  = var.evaluation_period
   metric_name         = "ErrorPortAllocation"
