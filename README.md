@@ -32,7 +32,6 @@ module "aws-nat-alarms" {
 |------|-------------|------|---------|:-----:|
 | actions\_alarm | A list of actions to take when alarms are triggered. Will likely be an SNS topic for event distribution. | `list` | `[]` | no |
 | actions\_ok | A list of actions to take when alarms are cleared. Will likely be an SNS topic for event distribution. | `list` | `[]` | no |
-| efs\_id | EFS ID | `string` | n/a | yes |
 | evaluation\_period | The evaluation period over which to use when triggering alarms. | `string` | `"5"` | no |
 | prefix | Alarm Name Prefix | `string` | `""` | no |
 | statistic\_period | The number of seconds that make each statistic period. | `string` | `"60"` | no |
